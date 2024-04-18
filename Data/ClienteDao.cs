@@ -116,6 +116,27 @@ namespace Data
             }
             return cliente;
         }
+
+        public void AlterarCliente(Cliente cliente)
+        {
+            const string query = @"update Clientes set nome=@Nome, Setor = @Setor, Profissao = @Profissao, Obseervacao = @Observacao, where CodigoCliente = @CodCliente";
+
+            try
+            {
+                using(var conexaoBd =new SqlConnection(_conexao))
+                using(var comando = new SqlCommand(query, conexaoBd))
+                {
+                    comando.Parameters.AddWithValue("@Nome", cliente.Nome);
+                    comando.Parameters.AddWithValue("@Setor", cliente.Setor);
+                    comando.Parameters.AddWithValue("@Profissao", cliente.Profissao);
+                    comando.Parameters.AddWithValue("@Obs", cliente.Obs);
+                }
+            }
+            catch(Exception ex)
+            {
+                throw new Exception();
+            }
+        }    
     }
 }
 
