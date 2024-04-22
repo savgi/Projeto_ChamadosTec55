@@ -37,7 +37,7 @@ namespace ChamadosTecnicosTec55.Adicionar
 
             if (string.IsNullOrEmpty(txbNome.Text) || string.IsNullOrEmpty(txbObs.Text) || string.IsNullOrEmpty(txbProfissao.Text) || string.IsNullOrEmpty(txbSetor.Text))
             {
-                MessageBox.Show("CADE OS DADOSSS ??");
+                MessageBox.Show("CADE OS DADOSSS??");
             }
             else 
             {
@@ -69,6 +69,46 @@ namespace ChamadosTecnicosTec55.Adicionar
         }
 
         private void frmAdicionarCliente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbObs_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbSetor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbProfissao_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

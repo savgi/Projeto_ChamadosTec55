@@ -59,6 +59,7 @@
             this.txbBuscar.Name = "txbBuscar";
             this.txbBuscar.Size = new System.Drawing.Size(100, 20);
             this.txbBuscar.TabIndex = 1;
+            this.txbBuscar.TextChanged += new System.EventHandler(this.txbBuscar_TextChanged);
             // 
             // btnBuscar
             // 

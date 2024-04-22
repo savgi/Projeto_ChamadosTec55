@@ -50,6 +50,7 @@
             this.label1.Size = new System.Drawing.Size(106, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cliente";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -60,6 +61,7 @@
             this.label2.Size = new System.Drawing.Size(45, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nome";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -70,6 +72,7 @@
             this.label3.Size = new System.Drawing.Size(67, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Profissão";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txbProfissao
             // 
@@ -77,6 +80,7 @@
             this.txbProfissao.Name = "txbProfissao";
             this.txbProfissao.Size = new System.Drawing.Size(456, 20);
             this.txbProfissao.TabIndex = 2;
+            this.txbProfissao.TextChanged += new System.EventHandler(this.txbProfissao_TextChanged);
             // 
             // label4
             // 
@@ -87,6 +91,7 @@
             this.label4.Size = new System.Drawing.Size(42, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Setor";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txbSetor
             // 
@@ -94,6 +99,7 @@
             this.txbSetor.Name = "txbSetor";
             this.txbSetor.Size = new System.Drawing.Size(456, 20);
             this.txbSetor.TabIndex = 3;
+            this.txbSetor.TextChanged += new System.EventHandler(this.txbSetor_TextChanged);
             // 
             // label5
             // 
@@ -104,6 +110,7 @@
             this.label5.Size = new System.Drawing.Size(85, 17);
             this.label5.TabIndex = 8;
             this.label5.Text = "Observação";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txbObs
             // 
@@ -112,6 +119,7 @@
             this.txbObs.Name = "txbObs";
             this.txbObs.Size = new System.Drawing.Size(455, 80);
             this.txbObs.TabIndex = 4;
+            this.txbObs.TextChanged += new System.EventHandler(this.txbObs_TextChanged);
             // 
             // btnSalvar
             // 

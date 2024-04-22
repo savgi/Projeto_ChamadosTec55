@@ -55,6 +55,18 @@
     <Compile Include="Adicionar\frmAdicionarCliente.Designer.cs">
       <DependentUpon>frmAdicionarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adicionar\frmAdicionarTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar\frmAdicionarTecnico.Designer.cs">
+      <DependentUpon>frmAdicionarTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adicionar\frmAlterarTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar\frmAlterarTecnico.Designer.cs">
+      <DependentUpon>frmAlterarTecnico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Adicionar\frmTecnicoAdicionar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +85,12 @@
     <Compile Include="Alterar\frmGerirClientes.Designer.cs">
       <DependentUpon>frmGerirClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alterar\frmGerirTecnicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar\frmGerirTecnicos.Designer.cs">
+      <DependentUpon>frmGerirTecnicos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +108,12 @@
     <EmbeddedResource Include="Adicionar\frmAdicionarCliente.resx">
       <DependentUpon>frmAdicionarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Adicionar\frmAdicionarTecnico.resx">
+      <DependentUpon>frmAdicionarTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adicionar\frmAlterarTecnico.resx">
+      <DependentUpon>frmAlterarTecnico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Adicionar\frmTecnicoAdicionar.resx">
       <DependentUpon>frmTecnicoAdicionar.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Alterar\frmGerirClientes.resx">
       <DependentUpon>frmGerirClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar\frmGerirTecnicos.resx">
+      <DependentUpon>frmGerirTecnicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

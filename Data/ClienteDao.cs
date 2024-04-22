@@ -119,27 +119,49 @@ namespace Data
 
         public void AlterarCliente(Cliente cliente)
         {
-            const string query = @"update Clientes set nome=@Nome, Setor = @Setor, Profissao = @Profissao, Obseervacao = @Observacao, where CodigoCliente = @CodCliente";
+            const string query = @"update Clientes set nome=@Nome, Setor = @Setor, Profissao = @Profissao, Obs = @Obs where CodigoCliente = @CodCliente";
 
             try
             {
-                using(var conexaoBd =new SqlConnection(_conexao))
-                using(var comando = new SqlCommand(query, conexaoBd))
+                using (var conexaoBd = new SqlConnection(_conexao))
+                using (var comando = new SqlCommand(query, conexaoBd))
                 {
+                    comando.Parameters.AddWithValue("@CodCliente", cliente.CodigoCliente);
                     comando.Parameters.AddWithValue("@Nome", cliente.Nome);
                     comando.Parameters.AddWithValue("@Setor", cliente.Setor);
                     comando.Parameters.AddWithValue("@Profissao", cliente.Profissao);
                     comando.Parameters.AddWithValue("@Obs", cliente.Obs);
+                    conexaoBd.Open();
+                    comando.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public void ExcluirCliente(int codigocliente)
+        {
+            const string query = @"delete from clientes where codigocliente = @codigoCliente";
+            try
+            {
+                using (var conexaoBd = new SqlConnection(_conexao))
+                using (var comando = new SqlCommand(query, conexaoBd))
+                {
+                    comando.Parameters.AddWithValue("@codigoCliente", codigocliente);
+                    conexaoBd.Open();
+                    comando.ExecuteNonQuery();
                 }
             }
             catch(Exception ex)
             {
-                throw new Exception();
+                throw new Exception($"Erro ao excluir{ex.Message}", ex);
             }
-        }    
+
+        }
+
     }
 }
-
 
 
 

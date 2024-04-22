@@ -70,5 +70,12 @@ namespace ChamadosTecnicosTec55
         {
 
         }
+
+        private void gestorDeChamadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formgerirtecnico = new frmGerirTecnicos();
+            formgerirtecnico.MdiParent = this;
+            formgerirtecnico.Show();
+        }
     }
 }
